@@ -1,0 +1,9 @@
+dependencies: 
+    Ling: 
+        - Bat
+        - CliTools
+        - Light
+    
+
+post_install: 
+    map: true
