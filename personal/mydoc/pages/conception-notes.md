@@ -34,14 +34,14 @@ replace it with `php -f ./scripts/Ling/Light_Cli/light-cli.php -- ` every time.
 
 Usage theory
 ------
-2021-01-05 -> 2021-01-07
+2021-01-05 -> 2021-01-14
 
 
 The **light** command (alias to our script as described in the [preparation section](#preparation)) can be used in the following manners:
 
-- light <appId> <command> (<args>)?
-- light <alias> (<args>)?
-- light <specialExpression>
+- light \<appId> <command> (\<args>)?
+- light \<alias> (\<args>)?
+- light \<specialExpression>
 
 
 The first form is the most common.

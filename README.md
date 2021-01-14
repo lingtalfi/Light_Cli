@@ -70,6 +70,10 @@ cli:
 History Log
 =============
 
+- 1.0.1 -- 2021-01-14
+
+    - fix conception notes formatting
+  
 - 1.0.0 -- 2021-01-07
 
     - initial commit
