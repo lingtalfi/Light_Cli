@@ -4,7 +4,7 @@
 
 The LightCliException class
 ================
-2021-01-07 --> 2021-01-14
+2021-01-07 --> 2021-01-15
 
 
 
@@ -54,4 +54,4 @@ See the source code of [Ling\Light_Cli\Exception\LightCliException](https://gith
 
 SeeAlso
 ==============
-Previous class: [LightCliCommandInterface](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Program/LightCliCommandInterface.md)<br>Next class: [LightCliFormatHelper](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/Helper/LightCliFormatHelper.md)<br>
+Previous class: [LightCliCommandInterface](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Program/LightCliCommandInterface.md)<br>Next class: [LightCliCommandDocHelper](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/Helper/LightCliCommandDocHelper.md)<br>

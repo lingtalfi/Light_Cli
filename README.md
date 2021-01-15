@@ -1,6 +1,6 @@
 Light_Cli
 ===========
-2021-01-07 -> 2021-01-14
+2021-01-07 -> 2021-01-15
 
 
 A command line interface for the light framework.
@@ -70,6 +70,10 @@ cli:
 History Log
 =============
 
+- 1.0.2 -- 2021-01-15
+
+    - add LightCliCommandDocHelper class
+  
 - 1.0.1 -- 2021-01-14
 
     - fix conception notes formatting

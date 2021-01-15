@@ -42,6 +42,8 @@ https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliToo
 https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Program/LightCliCommandInterface/getParameters.md
 https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Program/LightCliCommandInterface.md
 https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/Exception/LightCliException.md
+https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/Helper/LightCliCommandDocHelper/printCommandListDocByApp.md
+https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/Helper/LightCliCommandDocHelper.md
 https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/Helper/LightCliFormatHelper/getBannerFmt.md
 https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/Helper/LightCliFormatHelper/getCommandFmt.md
 https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/Helper/LightCliFormatHelper/getCommandLineFlagFmt.md
@@ -59,5 +61,14 @@ https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/Servic
 https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/Service/LightCliService/setContainer.md
 https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/Service/LightCliService/setOptions.md
 https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/Service/LightCliService.md
+https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/Util/LightCliCommandDocUtility/__construct.md
+https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/Util/LightCliCommandDocUtility/buildListFromCliApps.md
+https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/Util/LightCliCommandDocUtility/error.md
+https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/Util/LightCliCommandDocUtility/filterMatch.md
+https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/Util/LightCliCommandDocUtility/getIndexByCommand.md
+https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/Util/LightCliCommandDocUtility/indent.md
+https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/Util/LightCliCommandDocUtility/printListByApp.md
+https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/Util/LightCliCommandDocUtility/trimLongText.md
+https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/Util/LightCliCommandDocUtility.md
 https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli.md
 https://github.com/lingtalfi/Light_Cli/blob/master/doc/pages/conception-notes.md
