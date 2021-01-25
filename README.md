@@ -1,6 +1,6 @@
 Light_Cli
 ===========
-2021-01-07 -> 2021-01-15
+2021-01-07 -> 2021-01-25
 
 
 A command line interface for the light framework.
@@ -70,6 +70,10 @@ cli:
 History Log
 =============
 
+- 1.0.3 -- 2021-01-25
+
+    - fix LightCliApplication::onCommandNotFound, functional typo with alias creating infinite loop
+  
 - 1.0.2 -- 2021-01-15
 
     - add LightCliCommandDocHelper class

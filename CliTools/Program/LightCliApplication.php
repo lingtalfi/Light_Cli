@@ -118,6 +118,7 @@ class LightCliApplication extends Application
             // alias?
             // is it alias then?
             $this->buildAliases($cliApps);
+
             if (array_key_exists($firstParam, $this->alias2Cmds)) {
 
                 $cmds = $this->alias2Cmds[$firstParam];
@@ -147,20 +148,20 @@ class LightCliApplication extends Application
                 } else {
                     $firstParamAlias = $this->alias2Cmds[$firstParam][0];
                 }
+
+
+                //--------------------------------------------
+                // REPLACING ALIAS IN THE OLD COMMAND, AND RE-TRIGGERING THE METHOD
+                //--------------------------------------------
+                $cmdLineInput = CommandLineInputHelper::getCommandLineByInput($input);
+                $cmdLineInput = preg_replace('!' . preg_quote($firstParam, '!') . '!', $firstParamAlias, $cmdLineInput, 1);
+
+                $cmdArgv = CommandLineInputHelper::paramStringToArgv($cmdLineInput);
+                array_unshift($cmdArgv, "fake/command");
+                $newInput = new CommandLineInput($cmdArgv);
+                $this->onCommandNotFound($commandAlias, $newInput, $output);
+                return;
             }
-
-
-            //--------------------------------------------
-            // REPLACING ALIAS IN THE OLD COMMAND, AND RE-TRIGGERING THE METHOD
-            //--------------------------------------------
-            $cmdLineInput = CommandLineInputHelper::getCommandLineByInput($input);
-            $cmdLineInput = preg_replace('!' . preg_quote($firstParam, '!') . '!', $firstParamAlias, $cmdLineInput, 1);
-
-            $cmdArgv = CommandLineInputHelper::paramStringToArgv($cmdLineInput);
-            array_unshift($cmdArgv, "fake/command");
-            $newInput = new CommandLineInput($cmdArgv);
-            $this->onCommandNotFound($commandAlias, $newInput, $output);
-            return;
 
         }
 
