@@ -1,6 +1,6 @@
 Light_Cli
 ===========
-2021-01-07 -> 2021-01-25
+2021-01-07 -> 2021-01-26
 
 
 A command line interface for the light framework.
@@ -69,6 +69,10 @@ cli:
 
 History Log
 =============
+
+- 1.0.4 -- 2021-01-26
+
+    - fix LightCliCommandDocUtility::printListByApp triggering error if index for alias is given 
 
 - 1.0.3 -- 2021-01-25
 

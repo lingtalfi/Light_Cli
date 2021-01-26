@@ -4,7 +4,7 @@
 
 The LightCliCommandDocUtility class
 ================
-2021-01-07 --> 2021-01-25
+2021-01-07 --> 2021-01-26
 
 
 
@@ -26,6 +26,7 @@ class <span class="pl-k">LightCliCommandDocUtility</span>  {
 
 - Properties
     - private int [$indentInc](#property-indentInc) ;
+    - private array [$listCache](#property-listCache) ;
 
 - Methods
     - public [__construct](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/Util/LightCliCommandDocUtility/__construct.md)() : void
@@ -48,6 +49,12 @@ Properties
 - <span id="property-indentInc"><b>indentInc</b></span>
 
     This property holds the indentInc for this instance.
+    
+    
+
+- <span id="property-listCache"><b>listCache</b></span>
+
+    This property holds the listCache for this instance.
     
     
 

@@ -22,6 +22,12 @@ class LightCliCommandDocUtility
      */
     private $indentInc;
 
+    /**
+     * This property holds the listCache for this instance.
+     * @var array
+     */
+    private $listCache;
+
 
     /**
      * Builds the LightCliCommandDocUtility instance.
@@ -29,6 +35,7 @@ class LightCliCommandDocUtility
     public function __construct()
     {
         $this->indentInc = 4;
+        $this->listCache = null;
     }
 
     /**
@@ -93,12 +100,14 @@ class LightCliCommandDocUtility
         $list = LightCliCommandDocUtility::buildListFromCliApps($apps, [
             'includeAppId' => $includeAppId,
         ]);
+        $this->listCache = $list;
 
 
         $hasStringFilter = false;
         if (null !== $filter && false === is_numeric($filter)) {
             $hasStringFilter = true;
         }
+
 
         //--------------------------------------------
         // USER CHOOSES AN INDEX
@@ -108,6 +117,7 @@ class LightCliCommandDocUtility
                 $list = [$list[$filter]];
             }
         }
+
 
         //--------------------------------------------
         // DISPLAY THE LIST
@@ -230,9 +240,8 @@ class LightCliCommandDocUtility
                     break;
                 case "alias":
                     if (true === $displayAliases) {
-
                         $dest = $item['dest'];
-                        $dstIndex = $this->getIndexByCommand($dest, $list);
+                        $dstIndex = $this->getIndexByCommand($dest, $this->listCache);
                         if (true === $displayIndexes) {
                             $line = "<b>$index</b>. ";
                         } else {

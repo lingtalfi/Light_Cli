@@ -72,7 +72,7 @@ Returns array.
 
 Source Code
 ===========
-See the source code for method [LightCliCommandDocUtility::buildListFromCliApps](https://github.com/lingtalfi/Light_Cli/blob/master/Util/LightCliCommandDocUtility.php#L292-L354)
+See the source code for method [LightCliCommandDocUtility::buildListFromCliApps](https://github.com/lingtalfi/Light_Cli/blob/master/Util/LightCliCommandDocUtility.php#L301-L363)
 
 
 See Also
