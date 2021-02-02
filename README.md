@@ -1,6 +1,6 @@
 Light_Cli
 ===========
-2021-01-07 -> 2021-01-26
+2021-01-07 -> 2021-02-02
 
 
 A command line interface for the light framework.
@@ -70,6 +70,10 @@ cli:
 History Log
 =============
 
+- 1.0.5 -- 2021-02-02
+
+    - update LightCliApplication, now transmits errorIsVerbose property to proxy apps 
+  
 - 1.0.4 -- 2021-01-26
 
     - fix LightCliCommandDocUtility::printListByApp triggering error if index for alias is given 

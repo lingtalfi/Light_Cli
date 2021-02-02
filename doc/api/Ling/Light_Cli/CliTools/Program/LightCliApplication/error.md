@@ -58,7 +58,7 @@ Exceptions thrown
 
 Source Code
 ===========
-See the source code for method [LightCliApplication::error](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Program/LightCliApplication.php#L256-L259)
+See the source code for method [LightCliApplication::error](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Program/LightCliApplication.php#L262-L265)
 
 
 See Also

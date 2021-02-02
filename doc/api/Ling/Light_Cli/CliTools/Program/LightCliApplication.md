@@ -4,7 +4,7 @@
 
 The LightCliApplication class
 ================
-2021-01-07 --> 2021-01-26
+2021-01-07 --> 2021-02-02
 
 
 
@@ -48,7 +48,7 @@ class <span class="pl-k">LightCliApplication</span> extends [Application](https:
 
 - Inherited methods
     - public Application::registerCommand(string $commandClassName, $aliases) : void
-    - protected Application::runProgram(Ling\CliTools\Input\InputInterface $input, [Ling\CliTools\Output\OutputInterface](https://github.com/lingtalfi/CliTools/blob/master/doc/api/Ling/CliTools/Output/OutputInterface.md) $output) : int | null
+    - protected Application::runProgram(Ling\CliTools\Input\InputInterface $input, [Ling\CliTools\Output\OutputInterface](https://github.com/lingtalfi/CliTools/blob/master/doc/api/Ling/CliTools/Output/OutputInterface.md) $output) : mixed
     - public AbstractProgram::setLogger([Ling\UniversalLogger\UniversalLoggerInterface](https://github.com/lingtalfi/UniversalLogger/blob/master/doc/api/Ling/UniversalLogger/UniversalLoggerInterface.md) $logger) : void
     - public AbstractProgram::setLoggerChannel(string $loggerChannel) : void
     - public AbstractProgram::setErrorIsVerbose(bool $errorIsVerbose) : void

@@ -9,6 +9,7 @@ use Ling\CliTools\Helper\QuestionHelper;
 use Ling\CliTools\Input\CommandLineInput;
 use Ling\CliTools\Input\InputInterface;
 use Ling\CliTools\Output\OutputInterface;
+use Ling\CliTools\Program\AbstractProgram;
 use Ling\CliTools\Program\Application;
 use Ling\CliTools\Program\ProgramInterface;
 use Ling\Light\ServiceContainer\LightServiceContainerAwareInterface;
@@ -168,6 +169,7 @@ class LightCliApplication extends Application
 
         if (true === array_key_exists($firstParam, $cliApps)) {
             $app = $cliApps[$firstParam];
+
             $appId = $app->getAppId();
             if (null !== $secondParam) {
                 if ($app instanceof LightServiceContainerAwareInterface) {
@@ -176,6 +178,10 @@ class LightCliApplication extends Application
 
 
                 if ($app instanceof ProgramInterface) {
+
+                    if($app instanceof AbstractProgram){
+                        $app->setErrorIsVerbose($this->errorIsVerbose);
+                    }
 
                     $parameters = $input->getParameters();
                     array_shift($parameters); // drop the appId
