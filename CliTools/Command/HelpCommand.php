@@ -44,9 +44,11 @@ class HelpCommand extends LightCliBaseCommand
 
         $helpCommand = $this->n('help');
         $listCommand = $this->n('list');
+        $createAppCommand = $this->n('create_app');
 
         $flagV = $this->flag('-v');
         $parameterFilter = $this->arg('<filter>');
+        $parameterName = $this->arg('<name>');
 
 
         $output->write("<$format>" . str_repeat('=', 35) . "</$format>" . PHP_EOL);
@@ -70,6 +72,7 @@ class HelpCommand extends LightCliBaseCommand
         $output->write("------------- By default, the filter expression matches any part of the string." . PHP_EOL);
         $output->write("------------- To make it match only the beginning of the string, prefix the string with the dollar symbol ($)." . PHP_EOL);
         $output->write("--------- If it's an int, it's a number given by this list command. Each number represents a unique <b>appId command</b> or <b>alias</b>." . PHP_EOL);
+        $output->write("- $createAppCommand $parameterName: creates a new light application with the given name in the current directory." . PHP_EOL);
 
 
         //--------------------------------------------

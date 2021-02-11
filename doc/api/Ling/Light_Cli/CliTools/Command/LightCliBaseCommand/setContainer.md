@@ -7,7 +7,7 @@ LightCliBaseCommand::setContainer
 
 
 
-LightCliBaseCommand::setContainer — Sets the container.
+LightCliBaseCommand::setContainer — Sets the light service container interface.
 
 
 
@@ -21,7 +21,7 @@ public [LightCliBaseCommand::setContainer](https://github.com/lingtalfi/Light_Cl
 
 
 
-Sets the container.
+Sets the light service container interface.
 
 
 
@@ -49,7 +49,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [LightCliBaseCommand::setContainer](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Command/LightCliBaseCommand.php#L48-L51)
+See the source code for method [LightCliBaseCommand::setContainer](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Command/LightCliBaseCommand.php#L59-L62)
 
 
 See Also

@@ -53,7 +53,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [HelpCommand::section](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Command/HelpCommand.php#L130-L134)
+See the source code for method [HelpCommand::section](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Command/HelpCommand.php#L133-L137)
 
 
 See Also

@@ -6,13 +6,15 @@ namespace Ling\Light_Cli\CliTools\Command;
 use Ling\CliTools\Command\CommandInterface;
 use Ling\CliTools\Input\InputInterface;
 use Ling\CliTools\Output\OutputInterface;
+use Ling\Light\ServiceContainer\LightServiceContainerAwareInterface;
 use Ling\Light\ServiceContainer\LightServiceContainerInterface;
+use Ling\Light_Cli\CliTools\Program\LightCliApplication;
 use Ling\Light_Cli\Exception\LightCliException;
 
 /**
  * The LightCliBaseCommand class.
  */
-abstract class LightCliBaseCommand implements CommandInterface
+abstract class LightCliBaseCommand implements CommandInterface, LightServiceContainerAwareInterface
 {
 
 
@@ -21,6 +23,13 @@ abstract class LightCliBaseCommand implements CommandInterface
      * @var LightServiceContainerInterface
      */
     protected $container;
+
+
+    /**
+     * This property holds the application for this instance.
+     * @var LightCliApplication
+     */
+    protected LightCliApplication $application;
 
 
     /**
@@ -40,17 +49,21 @@ abstract class LightCliBaseCommand implements CommandInterface
      */
     abstract protected function doRun(InputInterface $input, OutputInterface $output);
 
+
+    //--------------------------------------------
+    // LightServiceContainerAwareInterface
+    //--------------------------------------------
     /**
-     * Sets the container.
-     *
-     * @param LightServiceContainerInterface $container
+     * @implementation
      */
     public function setContainer(LightServiceContainerInterface $container)
     {
         $this->container = $container;
     }
 
-
+    //--------------------------------------------
+    // CommandInterface
+    //--------------------------------------------
     /**
      * @implementation
      */
@@ -62,6 +75,24 @@ abstract class LightCliBaseCommand implements CommandInterface
             $output->write($e);
         }
     }
+
+
+
+    //--------------------------------------------
+    //
+    //--------------------------------------------
+    /**
+     * Sets the application.
+     *
+     * @param LightCliApplication $application
+     */
+    public function setApplication(LightCliApplication $application)
+    {
+        $this->application = $application;
+    }
+
+
+
 
 
 

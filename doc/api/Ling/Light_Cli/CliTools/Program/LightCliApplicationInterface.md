@@ -4,7 +4,7 @@
 
 The LightCliApplicationInterface class
 ================
-2021-01-07 --> 2021-02-02
+2021-01-07 --> 2021-02-11
 
 
 
@@ -54,4 +54,4 @@ See the source code of [Ling\Light_Cli\CliTools\Program\LightCliApplicationInter
 
 SeeAlso
 ==============
-Previous class: [LightCliApplication](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Program/LightCliApplication.md)<br>Next class: [LightCliBaseApplication](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Program/LightCliBaseApplication.md)<br>
+Previous class: [LightCliApplicationAwareInterface](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Program/LightCliApplicationAwareInterface.md)<br>Next class: [LightCliBaseApplication](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Program/LightCliBaseApplication.md)<br>

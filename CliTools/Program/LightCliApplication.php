@@ -66,11 +66,15 @@ class LightCliApplication extends Application
         $this->container = null;
         $this->currentOutput = null;
         $this->currentDirectory = getcwd();
+        if (false === $this->currentDirectory) {
+            throw new LightCliException("The \"getcwd\" php function returned false, cannot use this class (LightCliApplication).");
+        }
         $this->alias2Cmds = null;
 
 
         $this->registerCommand("Ling\Light_Cli\CliTools\Command\HelpCommand", "help");
         $this->registerCommand("Ling\Light_Cli\CliTools\Command\ListCommand", "list");
+        $this->registerCommand("Ling\Light_Cli\CliTools\Command\AppInitCommand", "app_init");
     }
 
 
@@ -84,6 +88,19 @@ class LightCliApplication extends Application
     {
         $this->container = $container;
     }
+
+    /**
+     * Returns the currentDirectory of this instance.
+     *
+     * @return string
+     */
+    public function getCurrentDirectory(): string
+    {
+        return $this->currentDirectory;
+    }
+
+
+
 
 
     //--------------------------------------------
@@ -179,7 +196,7 @@ class LightCliApplication extends Application
 
                 if ($app instanceof ProgramInterface) {
 
-                    if($app instanceof AbstractProgram){
+                    if ($app instanceof AbstractProgram) {
                         $app->setErrorIsVerbose($this->errorIsVerbose);
                     }
 
@@ -210,11 +227,16 @@ class LightCliApplication extends Application
      */
     protected function onCommandInstantiated(CommandInterface $command)
     {
-        // all our commands are container aware...
-        /**
-         * @var $command LightCliBaseCommand
-         */
-        $command->setContainer($this->container);
+        if ($command instanceof LightServiceContainerAwareInterface) {
+            $command->setContainer($this->container);
+        }
+        if ($command instanceof LightCliApplicationAwareInterface) {
+            $command->setApplication($this);
+        }
+        if ($command instanceof LightCliBaseCommand) {
+            $command->setApplication($this);
+        }
+
     }
 
 

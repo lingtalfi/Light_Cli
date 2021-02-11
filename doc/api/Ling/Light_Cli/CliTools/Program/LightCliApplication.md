@@ -4,7 +4,7 @@
 
 The LightCliApplication class
 ================
-2021-01-07 --> 2021-02-02
+2021-01-07 --> 2021-02-11
 
 
 
@@ -41,6 +41,7 @@ class <span class="pl-k">LightCliApplication</span> extends [Application](https:
 - Methods
     - public [__construct](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Program/LightCliApplication/__construct.md)() : void
     - public [setContainer](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Program/LightCliApplication/setContainer.md)([Ling\Light\ServiceContainer\LightServiceContainerInterface](https://github.com/lingtalfi/Light/blob/master/doc/api/Ling/Light/ServiceContainer/LightServiceContainerInterface.md) $container) : void
+    - public [getCurrentDirectory](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Program/LightCliApplication/getCurrentDirectory.md)() : string
     - protected [onCommandNotFound](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Program/LightCliApplication/onCommandNotFound.md)(string $commandAlias, Ling\CliTools\Input\InputInterface $input, [Ling\CliTools\Output\OutputInterface](https://github.com/lingtalfi/CliTools/blob/master/doc/api/Ling/CliTools/Output/OutputInterface.md) $output) : void
     - protected [onCommandInstantiated](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Program/LightCliApplication/onCommandInstantiated.md)([Ling\CliTools\Command\CommandInterface](https://github.com/lingtalfi/CliTools/blob/master/doc/api/Ling/CliTools/Command/CommandInterface.md) $command) : void
     - private [buildAliases](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Program/LightCliApplication/buildAliases.md)(array $cliApps) : void
@@ -155,6 +156,7 @@ Methods
 
 - [LightCliApplication::__construct](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Program/LightCliApplication/__construct.md) &ndash; Builds the Application instance.
 - [LightCliApplication::setContainer](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Program/LightCliApplication/setContainer.md) &ndash; Sets the container.
+- [LightCliApplication::getCurrentDirectory](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Program/LightCliApplication/getCurrentDirectory.md) &ndash; Returns the currentDirectory of this instance.
 - [LightCliApplication::onCommandNotFound](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Program/LightCliApplication/onCommandNotFound.md) &ndash; Hook called if a command was not found.
 - [LightCliApplication::onCommandInstantiated](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Program/LightCliApplication/onCommandInstantiated.md) &ndash; Can decorate the command after it has just been instantiated.
 - [LightCliApplication::buildAliases](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Program/LightCliApplication/buildAliases.md) &ndash; Builds the aliases array if not already built.
@@ -180,4 +182,4 @@ See the source code of [Ling\Light_Cli\CliTools\Program\LightCliApplication](htt
 
 SeeAlso
 ==============
-Previous class: [ListCommand](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Command/ListCommand.md)<br>Next class: [LightCliApplicationInterface](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Program/LightCliApplicationInterface.md)<br>
+Previous class: [ListCommand](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Command/ListCommand.md)<br>Next class: [LightCliApplicationAwareInterface](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Program/LightCliApplicationAwareInterface.md)<br>

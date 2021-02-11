@@ -1,6 +1,6 @@
 Light_Cli
 ===========
-2021-01-07 -> 2021-02-02
+2021-01-07 -> 2021-02-11
 
 
 A command line interface for the light framework.
@@ -70,6 +70,14 @@ cli:
 History Log
 =============
 
+- 1.0.7 -- 2021-02-11
+
+    - update light-cli.php script, the path to the light init file 
+  
+- 1.0.6 -- 2021-02-04
+
+    - add LightCliApplication->getCurrentDirectory method 
+  
 - 1.0.5 -- 2021-02-02
 
     - update LightCliApplication, now transmits errorIsVerbose property to proxy apps 

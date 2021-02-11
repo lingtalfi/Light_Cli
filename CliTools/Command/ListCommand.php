@@ -26,6 +26,9 @@ class ListCommand extends LightCliBaseCommand
      */
     protected function doRun(InputInterface $input, OutputInterface $output)
     {
+
+
+
         /**
          * @var $lc LightCliService
          */

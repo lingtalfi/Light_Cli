@@ -186,7 +186,7 @@ class LightCliCommandDocUtility
 
 
                     if (false === $verbose) {
-                        $description = $this->trimLongText($description);
+                        $description = str_replace(PHP_EOL, " ", $this->trimLongText($description));
                         $line .= ": " . trim($this->indent($description, 1)) . PHP_EOL;
                     } else {
                         $line .= PHP_EOL;

@@ -1,15 +1,15 @@
 Light cli, conception notes
 ==========
-2021-01-05 -> 2021-01-14
+2021-01-05 -> 2021-02-02
 
 
 
 
-The two major ideas behind **light cli** are:
+The major ideas behind **light cli** are:
 
 - creating only ONE script for all cli apps, instead of one script per cli app
 - having access to the light (initialized) instance, from the cli apps
-
+- a create app command
 
 
 
@@ -90,7 +90,7 @@ When this happens, we ask the user to make up his/her mind and select the comman
 
 Usage commands
 ---------
-2021-01-05 -> 2021-01-14
+2021-01-05 -> 2021-02-02
 
 
 ### help
@@ -109,6 +109,11 @@ displays a help message.
             - If it's an int, it's a number given by this list command. Each number represents a unique appId command or alias.
     - Flags:
         - -v: verbose, whether to display all the details about each command (flags, options, parameters, etc...).
+  
+    
+### app_init
+
+- app_init: builds a light application in the current directory
   
     
 

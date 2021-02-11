@@ -46,7 +46,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [LightCliBaseCommand::__construct](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Command/LightCliBaseCommand.php#L29-L32)
+See the source code for method [LightCliBaseCommand::__construct](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Command/LightCliBaseCommand.php#L38-L41)
 
 
 See Also
