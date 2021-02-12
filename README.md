@@ -70,6 +70,10 @@ cli:
 History Log
 =============
 
+- 1.0.9 -- 2021-02-12
+
+    - fix web-installer functional typo
+
 - 1.0.8 -- 2021-02-12
 
     - add web-installer 

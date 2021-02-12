@@ -34,3 +34,9 @@
     - Ling:Bat:1.304+
     - Ling:CliTools:1.10.25+
     - Ling:Light:0.69.21+
+
+1.0.9: 
+    - Ling:BabyYaml:1.7.7+
+    - Ling:Bat:1.304+
+    - Ling:CliTools:1.10.25+
+    - Ling:Light:0.69.21+

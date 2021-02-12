@@ -174,8 +174,8 @@ if (true === mkdirr($cliDir)) {
 
                 $ltAliasPath = $binDir . "/lt";
                 info("6/$nbSteps: Creating " . bold("lt") . " symlink...");
-                if (false === file_exists($lightAliasPath)) {
-                    $cmd = "ln -s \"$cliBinPath\" \"$lightAliasPath\"";
+                if (false === file_exists($ltAliasPath)) {
+                    $cmd = "ln -s \"$cliBinPath\" \"$ltAliasPath\"";
                     if (true === execc($cmd)) {
                         success("ok" . PHP_EOL);
                     } else {
