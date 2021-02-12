@@ -1,6 +1,6 @@
 Light_Cli
 ===========
-2021-01-07 -> 2021-02-11
+2021-01-07 -> 2021-02-12
 
 
 A command line interface for the light framework.
@@ -70,6 +70,10 @@ cli:
 History Log
 =============
 
+- 1.0.8 -- 2021-02-12
+
+    - add web-installer 
+  
 - 1.0.7 -- 2021-02-11
 
     - update light-cli.php script, the path to the light init file 

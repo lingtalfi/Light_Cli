@@ -1,6 +1,6 @@
 Light cli, conception notes
 ==========
-2021-01-05 -> 2021-02-02
+2021-01-05 -> 2021-02-12
 
 
 
@@ -13,22 +13,87 @@ The major ideas behind **light cli** are:
 
 
 
-Preparation
+Installation/basics
 ---------
-2021-01-05 -> 2021-01-14
+2021-01-05 -> 2021-02-12
 
-Before you can use our cli, we recommend that you do yourself a favor and add this alias to your bash/shell environment:
 
-```sh
-alias light='php -f ./scripts/Ling/Light_Cli/light-cli.php -- '
+
+
+The installation process does the following:
+
+
+- install a **standalone light app** on your machine
+- install the **light-cli** executable on your machine
+
+
+
+When you invoke the **light-cli** executable, it will try to use the **light app** you are in first.
+If you're not in a light app, it will use the **standalone light app** as a fallback.
+
+
+To complete the installation process, you can use either of the following techniques:
+
+
+- the automatic installation (a one liner)
+- the manual installation (is the exact description of what the automatic **install** does, but you do them manually)
+
+
+
+
+### automatic installation
+2021-02-12
+
+The steps are described in the [manual installation](#manual-installation).
+
+Execute the following one-liner, which assumes you have the **php** (in version 8+) and **unzip** programs on your machine.
+
+
+Mac: 
+```bash
+temp_file=$(mktemp); curl -fsSL https://raw.githubusercontent.com/lingtalfi/Light_Cli/master/scripts/web-installer.php > $temp_file; php -f $temp_file;
 ```
 
-That way, you just need to **cd** to your application and type your **light** commands.
 
-Everything in this document assumes that you have this shortcut ready.
 
-If you prefer to not add that alias, you can still follow our document, but everytime we use the **light** command, you'll have to manually
-replace it with `php -f ./scripts/Ling/Light_Cli/light-cli.php -- ` every time.
+
+
+
+### manual installation
+2021-02-12
+
+
+1. First define a path where the **Light_Cli** plugin will put the assets it needs to work. We call that path **$cliPath**, 
+    and in the rest of this section we will choose **$cliPath**=**/usr/local/share**, which is the value used by the automatic installation (choose the value you want).
+   
+
+2. Create the **$cliPath/universe/Ling/Light_Cli** directory.
+
+
+3. Download the **light standalone app zip** from **https://github.com/lingtalfi/Light_AppBoilerplate/raw/master/assets/light-app-boilerplate.zip**.
+
+
+4. Unzip it, and move the **light-app-boilerplate** dir to **$cliPath/universe/Ling/Light_Cli/light-app-standalone**.
+
+
+5. Make the **$cliPath/universe/Ling/Light_Cli/light-app-standalone/universe/Ling/Light_Cli/bin/light-cli** binary executable (chmod u+x).
+
+
+6. Make a symlink of that binary in **/usr/local/bin** (this is what the automatic **install** does), or the location of your choice.
+
+    - cd **/usr/local/bin** && ln -s **$cliPath/universe/Ling/Light_Cli/light-app-standalone/universe/Ling/Light_Cli/bin/light-cli** light
+    - cd **/usr/local/bin** && ln -s **$cliPath/universe/Ling/Light_Cli/light-app-standalone/universe/Ling/Light_Cli/bin/light-cli** lt (optional, but if you want to type lt instead light to save some time, create this symlink too) 
+
+    Note: I personally use only the **lt** command, as it's faster to type. 
+    Note2: make sure **/usr/local/bin** is in your $PATH (I believe it is by default), otherwise that wouldn't work.  
+
+7. That should have worked. Now invoke the **light** (and/or **lt**) command directly, you should see the light cli welcome screen.
+
+
+
+
+
+
 
 
 
