@@ -70,6 +70,10 @@ cli:
 History Log
 =============
 
+- 1.0.10 -- 2021-02-12
+
+    - add create_app command, and light-cli binary
+
 - 1.0.9 -- 2021-02-12
 
     - fix web-installer functional typo

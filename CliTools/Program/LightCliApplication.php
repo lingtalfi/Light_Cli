@@ -74,7 +74,7 @@ class LightCliApplication extends Application
 
         $this->registerCommand("Ling\Light_Cli\CliTools\Command\HelpCommand", "help");
         $this->registerCommand("Ling\Light_Cli\CliTools\Command\ListCommand", "list");
-        $this->registerCommand("Ling\Light_Cli\CliTools\Command\AppInitCommand", "app_init");
+        $this->registerCommand("Ling\Light_Cli\CliTools\Command\CreateAppCommand", "create_app");
     }
 
 

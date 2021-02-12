@@ -65,6 +65,9 @@ temp_file=$(mktemp); curl -fsSL https://raw.githubusercontent.com/lingtalfi/Ligh
 
 1. First define a path where the **Light_Cli** plugin will put the assets it needs to work. We call that path **$cliPath**, 
     and in the rest of this section we will choose **$cliPath**=**/usr/local/share**, which is the value used by the automatic installation (choose the value you want).
+
+    Warning: before you change the default path, be sure to read the [machine universe](https://github.com/lingtalfi/UniverseTools/blob/master/doc/pages/conception-notes.md#machine-universe)
+    concept, as our plugin subscribe to its philosophy. 
    
 
 2. Create the **$cliPath/universe/Ling/Light_Cli** directory.
@@ -176,9 +179,9 @@ displays a help message.
         - -v: verbose, whether to display all the details about each command (flags, options, parameters, etc...).
   
     
-### app_init
+### create_app
 
-- app_init: builds a light application in the current directory
+- create_app \<appName>: builds a light application with the given name in the current directory
   
     
 

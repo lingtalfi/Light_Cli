@@ -40,3 +40,9 @@
     - Ling:Bat:1.304+
     - Ling:CliTools:1.10.25+
     - Ling:Light:0.69.21+
+
+1.0.10: 
+    - Ling:Bat:1.304+
+    - Ling:CliTools:1.10.25+
+    - Ling:UniverseTools:1.22.15+
+    - Ling:Light:0.69.21+

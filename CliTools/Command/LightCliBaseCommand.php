@@ -33,6 +33,13 @@ abstract class LightCliBaseCommand implements CommandInterface, LightServiceCont
 
 
     /**
+     * Cache for the output of the current command.
+     * @var OutputInterface
+     */
+    protected OutputInterface $output;
+
+
+    /**
      * Builds the LightCliBaseCommand instance.
      */
     public function __construct()
@@ -69,6 +76,7 @@ abstract class LightCliBaseCommand implements CommandInterface, LightServiceCont
      */
     public function run(InputInterface $input, OutputInterface $output)
     {
+        $this->output = $output;
         try {
             $this->doRun($input, $output);
         } catch (\Exception $e) {
@@ -100,12 +108,70 @@ abstract class LightCliBaseCommand implements CommandInterface, LightServiceCont
     //
     //--------------------------------------------
     /**
+     * Writes a debug message to the current output.
+     * @param string $msg
+     */
+    protected function debugMsg(string $msg)
+    {
+        $this->msg("<debug>$msg</debug>");
+    }
+
+
+    /**
+     * Writes a warning message to the current output.
+     * @param string $msg
+     */
+    protected function warningMsg(string $msg)
+    {
+        $this->msg("<warning>$msg</warning>");
+    }
+
+    /**
+     * Writes an info message to the current output.
+     * @param string $msg
+     */
+    protected function infoMsg(string $msg)
+    {
+        $this->msg("<info>$msg</info>");
+    }
+
+
+    /**
+     * Writes a success message to the current output.
+     * @param string $msg
+     */
+    protected function successMsg(string $msg)
+    {
+        $this->msg("<success>$msg</success>");
+    }
+
+    /**
+     * Writes an error message to the current output.
+     * @param string $msg
+     */
+    protected function errorMsg(string $msg)
+    {
+        $this->msg("<error>$msg</error>");
+    }
+
+    /**
+     * Writes the given message to the current output.
+     * @param string $msg
+     */
+    protected function msg(string $msg)
+    {
+        $this->output->write($msg);
+    }
+
+
+    /**
      * Throws an exception.
      *
      * @param string $msg
      */
     protected function error(string $msg)
     {
-        throw new LightCliException($msg);
+
+        throw new LightCliException(static::class . ": " . $msg);
     }
 }
