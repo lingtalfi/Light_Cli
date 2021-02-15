@@ -1,6 +1,6 @@
 Light_Cli
 ===========
-2021-01-07 -> 2021-02-12
+2021-01-07 -> 2021-02-15
 
 
 A command line interface for the light framework.
@@ -70,6 +70,10 @@ cli:
 History Log
 =============
 
+- 1.0.11 -- 2021-02-15
+
+    - add services and routes commands
+  
 - 1.0.10 -- 2021-02-12
 
     - add create_app command, and light-cli binary

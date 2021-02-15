@@ -28,7 +28,6 @@ class ListCommand extends LightCliBaseCommand
     {
 
 
-
         /**
          * @var $lc LightCliService
          */

@@ -45,8 +45,11 @@ class HelpCommand extends LightCliBaseCommand
         $helpCommand = $this->n('help');
         $listCommand = $this->n('list');
         $createAppCommand = $this->n('create_app');
+        $servicesCommand = $this->n('services');
+        $routesCommand = $this->n('routes');
 
         $flagV = $this->flag('-v');
+        $flagP = $this->flag('-p');
         $parameterFilter = $this->arg('<filter>');
         $parameterName = $this->arg('<name>');
 
@@ -73,6 +76,10 @@ class HelpCommand extends LightCliBaseCommand
         $output->write("------------- To make it match only the beginning of the string, prefix the string with the dollar symbol ($)." . PHP_EOL);
         $output->write("--------- If it's an int, it's a number given by this list command. Each number represents a unique <b>appId command</b> or <b>alias</b>." . PHP_EOL);
         $output->write("- $createAppCommand $parameterName: creates a new light application with the given name in the current directory." . PHP_EOL);
+        $output->write("- $servicesCommand: displays the list of services available to the application." . PHP_EOL);
+        $output->write("----- $flagV: verbose. Displays the class behind the services. Note: all the services will be instantiated, this could lead to side effects, depending on how the service is instantiated." . PHP_EOL);
+        $output->write("- $routesCommand: displays the routes available to the current app." . PHP_EOL);
+        $output->write("----- $flagP: planets, group the routes by planets." . PHP_EOL);
 
 
         //--------------------------------------------

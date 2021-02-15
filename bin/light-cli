@@ -43,7 +43,6 @@ if (false === file_exists($lightCliScript)) {
 
 
 
-
 //--------------------------------------------
 // FIND THE app.init.inc FILE TO USE
 //--------------------------------------------
@@ -59,6 +58,9 @@ if (false === file_exists($appInit)) {
         exit;
     }
 }
+
+
+
 
 
 require_once $appInit;
