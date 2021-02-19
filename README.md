@@ -1,6 +1,6 @@
 Light_Cli
 ===========
-2021-01-07 -> 2021-02-15
+2021-01-07 -> 2021-02-19
 
 
 A command line interface for the light framework.
@@ -70,6 +70,10 @@ cli:
 History Log
 =============
 
+- 1.0.12 -- 2021-02-19
+
+    - add planets command, moved "list" command to "commands"
+  
 - 1.0.11 -- 2021-02-15
 
     - add services and routes commands

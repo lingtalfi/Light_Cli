@@ -53,7 +53,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [RoutesCommand::doRun](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Command/RoutesCommand.php#L24-L60)
+See the source code for method [RoutesCommand::doRun](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Command/RoutesCommand.php#L25-L61)
 
 
 See Also
@@ -61,5 +61,5 @@ See Also
 
 The [RoutesCommand](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Command/RoutesCommand.md) class.
 
-Next method: [formatRoute](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Command/RoutesCommand/formatRoute.md)<br>
+Next method: [getDescription](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Command/RoutesCommand/getDescription.md)<br>
 

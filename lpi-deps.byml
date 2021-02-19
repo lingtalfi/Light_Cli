@@ -52,3 +52,10 @@
     - Ling:CliTools:1.10.25+
     - Ling:UniverseTools:1.22.20+
     - Ling:Light:0.69.21+
+
+1.0.12: 
+    - Ling:Bat:1.305+
+    - Ling:CliTools:1.10.25+
+    - Ling:Light:0.69.22+
+    - Ling:Light_PlanetInstaller:1.0.7+
+    - Ling:UniverseTools:1.22.24+

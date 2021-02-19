@@ -6,6 +6,7 @@ namespace Ling\Light_Cli\CliTools\Command;
 
 use Ling\CliTools\Input\InputInterface;
 use Ling\CliTools\Output\OutputInterface;
+use Ling\Light_Cli\Helper\LightCliFormatHelper;
 
 
 /**
@@ -14,7 +15,7 @@ use Ling\CliTools\Output\OutputInterface;
  *
  *
  */
-class RoutesCommand extends LightCliBaseCommand
+class RoutesCommand extends LightCliDocCommand
 {
 
 
@@ -58,6 +59,34 @@ class RoutesCommand extends LightCliBaseCommand
             }
         }
     }
+
+    //--------------------------------------------
+    // LightCliCommandInterface
+    //--------------------------------------------
+    /**
+     * @overrides
+     */
+    public function getDescription(): string
+    {
+        $co = LightCliFormatHelper::getConceptFmt();
+        $url = LightCliFormatHelper::getUrlFmt();
+        return " displays the routes available to the current app.";
+    }
+
+    /**
+     * @overrides
+     */
+    public function getFlags(): array
+    {
+        $co = LightCliFormatHelper::getConceptFmt();
+        $url = LightCliFormatHelper::getUrlFmt();
+
+        return [
+            "p" => " planets, group the routes by planets.",
+        ];
+    }
+
+
 
 
     //--------------------------------------------

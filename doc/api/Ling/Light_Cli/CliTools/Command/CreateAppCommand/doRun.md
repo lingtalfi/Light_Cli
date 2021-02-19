@@ -61,5 +61,5 @@ See Also
 
 The [CreateAppCommand](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Command/CreateAppCommand.md) class.
 
-
+Next method: [getDescription](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Command/CreateAppCommand/getDescription.md)<br>
 

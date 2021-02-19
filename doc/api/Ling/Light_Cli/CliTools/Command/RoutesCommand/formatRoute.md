@@ -49,7 +49,7 @@ Returns string.
 
 Source Code
 ===========
-See the source code for method [RoutesCommand::formatRoute](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Command/RoutesCommand.php#L72-L75)
+See the source code for method [RoutesCommand::formatRoute](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Command/RoutesCommand.php#L101-L104)
 
 
 See Also
@@ -57,5 +57,5 @@ See Also
 
 The [RoutesCommand](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Command/RoutesCommand.md) class.
 
-Previous method: [doRun](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Command/RoutesCommand/doRun.md)<br>
+Previous method: [getFlags](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Command/RoutesCommand/getFlags.md)<br>
 

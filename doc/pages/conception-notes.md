@@ -1,6 +1,6 @@
 Light cli, conception notes
 ==========
-2021-01-05 -> 2021-02-15
+2021-01-05 -> 2021-02-19
 
 The major ideas behind **light cli** are:
 
@@ -131,51 +131,37 @@ When this happens, we ask the user to make up his/her mind and select the comman
 
 Usage commands
 ---------
-2021-01-05 -> 2021-02-15
+2021-01-05 -> 2021-02-19
 
-### help
-2021-01-05
 
-displays a help message.
-
-### list
-2021-01-05
-
-- list \<filter>?: displays the list of registered third party application commands and aliases.
+- **commands**: displays the list of registered third party application commands and aliases.
     - Arguments:
-        - Parameters:
-            - \<filter>: filters the list using either an int or a string.
-                - If it's a string, it filters the list using that string. We search in **appId commands** and **
-                  aliases**. By default, the filter expression matches any part of the string. To make it match only the
+        - parameters:
+            - filter: filters the list using either an int or a string.
+                - If it's a string, it filters the list using that string. We search in **appId command** names.
+                  By default, the filter expression matches any part of the string. To make it match only the
                   beginning of the string, prefix the string with the dollar symbol ($).
                 - If it's an int, it's a number given by this list command. Each number represents a unique appId
-                  command or alias.
-        - Flags:
-            - -v: verbose, whether to display all the details about each command (flags, options, parameters, etc...).
-
-### create_app
-2021-01-05
-
-
-- create_app \<appName>: builds a light application with the given name in the current directory.
-
-### services
-2021-02-15
-
-- services: displays the list of services available in the current app.
+                  command.
+        - flags:
+            - v: verbose, whether to display all the details about each command (flags, options, parameters, etc...).
+- **create_app**: builds a light application with the given name in the current directory.
     - Arguments:
-        - Flags:
-            - -v: verbose, whether to display the class behind the services. Note that this method will instantiate all the services in order to access the classes.
-                So, depending on what the service does when it's instantiated, one might generate side effects.
-                
-### routes
-2021-02-15
-
-- routes: displays the routes available to the current app.
+        - parameters:
+            - appName: the name of the application to create
+        - aliases:
+            - mkapp
+- **help**: displays a help message.
+- **routes**: displays the routes available to the current app.
     - Arguments:
-        - Flags:
-            - -p: planets, group the routes by planets.
-                
+        - flags:
+            - p: planets, group the routes by planets.
+- **services**: displays the list of services available in the current app.
+    - Arguments:
+        - flags:
+            - v: verbose, whether to display the class behind the services. Note that this method will instantiate all the services in order to access the classes.
+              So, depending on what the service does when it's instantiated, one might generate side effects.
+
 
 
 

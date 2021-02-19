@@ -16,7 +16,7 @@ use Ling\UniverseTools\MachineUniverseTool;
  * The CreateAppCommand
  *
  */
-class CreateAppCommand extends LightCliBaseCommand
+class CreateAppCommand extends LightCliDocCommand
 {
 
 
@@ -95,6 +95,50 @@ class CreateAppCommand extends LightCliBaseCommand
                 $this->error("The boilerplate dir doesn't exist: $boilerDir." . PHP_EOL);
             }
         }
+    }
+
+
+
+    //--------------------------------------------
+    //
+    //--------------------------------------------
+    /**
+     * @overrides
+     */
+    public function getDescription(): string
+    {
+        $co = LightCliFormatHelper::getConceptFmt();
+        $url = LightCliFormatHelper::getUrlFmt();
+        return " builds a light application with the given name in the current directory.";
+    }
+
+    /**
+     * @overrides
+     */
+    public function getParameters(): array
+    {
+        $co = LightCliFormatHelper::getConceptFmt();
+        $url = LightCliFormatHelper::getUrlFmt();
+
+        return [
+            "appName" => [
+                " the name of the application to create",
+                true,
+            ],
+        ];
+    }
+
+    /**
+     * @overrides
+     */
+    public function getAliases(): array
+    {
+        $co = LightCliFormatHelper::getConceptFmt();
+        $url = LightCliFormatHelper::getUrlFmt();
+
+        return [
+            "mkapp",
+        ];
     }
 
 

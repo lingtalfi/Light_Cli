@@ -6,6 +6,7 @@ namespace Ling\Light_Cli\CliTools\Command;
 
 use Ling\CliTools\Input\InputInterface;
 use Ling\CliTools\Output\OutputInterface;
+use Ling\Light_Cli\Helper\LightCliFormatHelper;
 
 
 /**
@@ -14,7 +15,7 @@ use Ling\CliTools\Output\OutputInterface;
  *
  *
  */
-class ServicesCommand extends LightCliBaseCommand
+class ServicesCommand extends LightCliDocCommand
 {
 
 
@@ -43,6 +44,32 @@ class ServicesCommand extends LightCliBaseCommand
 
 
 
+    //--------------------------------------------
+    // LightCliCommandInterface
+    //--------------------------------------------
+    /**
+     * @overrides
+     */
+    public function getDescription(): string
+    {
+        $co = LightCliFormatHelper::getConceptFmt();
+        $url = LightCliFormatHelper::getUrlFmt();
+        return " displays the list of services available in the current app.";
+    }
+
+    /**
+     * @overrides
+     */
+    public function getFlags(): array
+    {
+        $co = LightCliFormatHelper::getConceptFmt();
+        $url = LightCliFormatHelper::getUrlFmt();
+
+        return [
+            "v" => " verbose, whether to display the class behind the services. Note that this method will instantiate all the services in order to access the classes.
+ So, depending on what the service does when it's instantiated, one might generate side effects.",
+        ];
+    }
 
 
 }

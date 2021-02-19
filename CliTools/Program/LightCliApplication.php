@@ -10,10 +10,8 @@ use Ling\CliTools\Input\CommandLineInput;
 use Ling\CliTools\Input\InputInterface;
 use Ling\CliTools\Output\OutputInterface;
 use Ling\CliTools\Program\AbstractProgram;
-use Ling\CliTools\Program\Application;
 use Ling\CliTools\Program\ProgramInterface;
 use Ling\Light\ServiceContainer\LightServiceContainerAwareInterface;
-use Ling\Light\ServiceContainer\LightServiceContainerInterface;
 use Ling\Light_Cli\CliTools\Command\LightCliBaseCommand;
 use Ling\Light_Cli\Exception\LightCliException;
 use Ling\Light_Cli\Service\LightCliService;
@@ -22,7 +20,7 @@ use Ling\Light_Cli\Service\LightCliService;
  * The LightCliApplication class.
  *
  */
-class LightCliApplication extends Application
+class LightCliApplication extends LightCliBaseApplication
 {
 
 
@@ -30,30 +28,23 @@ class LightCliApplication extends Application
      * This property holds the currentDirectory when this instance was first instantiated.
      * @var string
      */
-    protected $currentDirectory;
+    protected string $currentDirectory;
 
     /**
      * This property holds the current output for this instance.
      *
      * It's set by a command when the command is executed.
      *
-     * @var OutputInterface
+     * @var OutputInterface|null
      */
-    protected $currentOutput;
-
-
-    /**
-     * This property holds the container for this instance.
-     * @var LightServiceContainerInterface
-     */
-    protected $container;
+    protected ?OutputInterface $currentOutput;
 
 
     /**
      * This property holds the alias2Cmds for this instance.
-     * @var array
+     * @var array|null
      */
-    protected $alias2Cmds;
+    protected ?array $alias2Cmds;
 
 
     /**
@@ -72,24 +63,14 @@ class LightCliApplication extends Application
         $this->alias2Cmds = null;
 
 
-        $this->registerCommand("Ling\Light_Cli\CliTools\Command\HelpCommand", "help");
-        $this->registerCommand("Ling\Light_Cli\CliTools\Command\ListCommand", "list");
+        $this->registerCommand("Ling\Light_Cli\CliTools\Command\CommandsCommand", "commands");
         $this->registerCommand("Ling\Light_Cli\CliTools\Command\CreateAppCommand", "create_app");
-        $this->registerCommand("Ling\Light_Cli\CliTools\Command\ServicesCommand", "services");
+        $this->registerCommand("Ling\Light_Cli\CliTools\Command\HelpCommand", "help");
+        $this->registerCommand("Ling\Light_Cli\CliTools\Command\PlanetsCommand", "planets");
         $this->registerCommand("Ling\Light_Cli\CliTools\Command\RoutesCommand", "routes");
+        $this->registerCommand("Ling\Light_Cli\CliTools\Command\ServicesCommand", "services");
     }
 
-
-    /**
-     * Sets the container.
-     *
-     * @param LightServiceContainerInterface $container
-     *
-     */
-    public function setContainer(LightServiceContainerInterface $container)
-    {
-        $this->container = $container;
-    }
 
     /**
      * Returns the currentDirectory of this instance.
@@ -101,6 +82,23 @@ class LightCliApplication extends Application
         return $this->currentDirectory;
     }
 
+
+
+
+    //--------------------------------------------
+    // LightCliApplicationInterface
+    //--------------------------------------------
+    /**
+     * @implementation
+     */
+    public function getAppId(): string
+    {
+        /**
+         * This is an exception to the rule. Usually app id aren't that long, but this is a
+         * reserved keyword used by some other tools at least in this planet.
+         */
+        return "light_cli";
+    }
 
 
 

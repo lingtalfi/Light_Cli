@@ -50,7 +50,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [LightCliApplication::onCommandInstantiated](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Program/LightCliApplication.php#L230-L242)
+See the source code for method [LightCliApplication::onCommandInstantiated](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Program/LightCliApplication.php#L228-L240)
 
 
 See Also
