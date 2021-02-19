@@ -118,8 +118,10 @@ class LightCliApplication extends LightCliBaseApplication
          */
 
 
+
         $firstParam = $input->getParameter(1); // cannot be null, because defaultCommandAlias = help (see parent class)
         $secondParam = $input->getParameter(2); // cannot be null, because defaultCommandAlias = help (see parent class)
+
 
 
         /**
@@ -136,6 +138,8 @@ class LightCliApplication extends LightCliBaseApplication
             // alias?
             // is it alias then?
             $this->buildAliases($cliApps);
+
+
 
             if (array_key_exists($firstParam, $this->alias2Cmds)) {
 

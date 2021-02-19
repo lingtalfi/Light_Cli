@@ -70,6 +70,10 @@ cli:
 History Log
 =============
 
+- 1.0.13 -- 2021-02-19
+
+    - fix LightCliCommandDocUtility->printListByApp, aliases not displayed correctly
+  
 - 1.0.12 -- 2021-02-19
 
     - add planets command, moved "list" command to "commands"

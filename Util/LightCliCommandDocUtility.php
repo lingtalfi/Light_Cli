@@ -140,9 +140,6 @@ class LightCliCommandDocUtility
             }
 
 
-
-
-
             //--------------------------------------------
             // COMMAND HEADER
             //--------------------------------------------
@@ -151,6 +148,11 @@ class LightCliCommandDocUtility
             } else {
                 $line = '- ';
             }
+
+            if (str_starts_with($name, "light_cli ")) {
+                $name = substr($name, 10);
+            }
+
 
             $line .= "<$cmdFmt>$name</$cmdFmt>";
             foreach ($parameters as $parameter => $info) {
@@ -185,9 +187,6 @@ class LightCliCommandDocUtility
                 }
                 $line .= ")";
             }
-
-
-
 
 
             //--------------------------------------------
@@ -247,7 +246,7 @@ class LightCliCommandDocUtility
 
                 if ($aliases) {
                     $line .= "$ind<$headerFmt>Aliases</$headerFmt>:" . PHP_EOL;
-                    foreach ($aliases as $name) {
+                    foreach ($aliases as $name => $srcCommand) {
                         $line .= $this->indent("- $name", 2) . PHP_EOL;
                     }
                 }

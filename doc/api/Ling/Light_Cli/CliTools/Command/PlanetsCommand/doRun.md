@@ -53,7 +53,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [PlanetsCommand::doRun](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Command/PlanetsCommand.php#L26-L43)
+See the source code for method [PlanetsCommand::doRun](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Command/PlanetsCommand.php#L27-L60)
 
 
 See Also
@@ -61,5 +61,5 @@ See Also
 
 The [PlanetsCommand](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Command/PlanetsCommand.md) class.
 
-
+Next method: [getDescription](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Command/PlanetsCommand/getDescription.md)<br>
 

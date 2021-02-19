@@ -152,6 +152,10 @@ Usage commands
         - aliases:
             - mkapp
 - **help**: displays a help message.
+- **planets**: lists all planets found in the current application, along with their current version numbers
+    - Arguments:
+        - flags:
+            - l: display only light planets  
 - **routes**: displays the routes available to the current app.
     - Arguments:
         - flags:
