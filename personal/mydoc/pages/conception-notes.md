@@ -149,6 +149,8 @@ Usage commands
     - Arguments:
         - parameters:
             - appName: the name of the application to create
+        - flags:
+            - n: new, flush the boilerplate cache and recreate the app from the boilerplate zip downloaded from the web.
         - aliases:
             - mkapp
 - **help**: displays a help message.

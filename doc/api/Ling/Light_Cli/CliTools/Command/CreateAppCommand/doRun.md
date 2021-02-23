@@ -53,7 +53,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [CreateAppCommand::doRun](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Command/CreateAppCommand.php#L26-L98)
+See the source code for method [CreateAppCommand::doRun](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Command/CreateAppCommand.php#L26-L101)
 
 
 See Also

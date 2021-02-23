@@ -46,7 +46,7 @@ Returns string.
 
 Source Code
 ===========
-See the source code for method [CreateAppCommand::getDescription](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Command/CreateAppCommand.php#L108-L113)
+See the source code for method [CreateAppCommand::getDescription](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Command/CreateAppCommand.php#L111-L116)
 
 
 See Also

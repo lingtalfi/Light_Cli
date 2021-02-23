@@ -49,7 +49,7 @@ Returns array.
 
 Source Code
 ===========
-See the source code for method [CreateAppCommand::getAliases](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Command/CreateAppCommand.php#L134-L142)
+See the source code for method [CreateAppCommand::getAliases](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Command/CreateAppCommand.php#L150-L158)
 
 
 See Also
@@ -57,5 +57,5 @@ See Also
 
 The [CreateAppCommand](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Command/CreateAppCommand.md) class.
 
-Previous method: [getParameters](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Command/CreateAppCommand/getParameters.md)<br>
+Previous method: [getFlags](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Command/CreateAppCommand/getFlags.md)<br>
 

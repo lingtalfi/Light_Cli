@@ -47,7 +47,7 @@ Returns array.
 
 Source Code
 ===========
-See the source code for method [CreateAppCommand::getParameters](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Command/CreateAppCommand.php#L118-L129)
+See the source code for method [CreateAppCommand::getParameters](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Command/CreateAppCommand.php#L121-L132)
 
 
 See Also
@@ -55,5 +55,5 @@ See Also
 
 The [CreateAppCommand](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Command/CreateAppCommand.md) class.
 
-Previous method: [getDescription](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Command/CreateAppCommand/getDescription.md)<br>Next method: [getAliases](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Command/CreateAppCommand/getAliases.md)<br>
+Previous method: [getDescription](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Command/CreateAppCommand/getDescription.md)<br>Next method: [getFlags](https://github.com/lingtalfi/Light_Cli/blob/master/doc/api/Ling/Light_Cli/CliTools/Command/CreateAppCommand/getFlags.md)<br>
 

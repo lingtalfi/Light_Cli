@@ -34,6 +34,9 @@ class CreateAppCommand extends LightCliDocCommand
          */
 
 
+        $new = $input->hasFlag("n");
+
+
         $fmtFile = LightCliFormatHelper::getFileFmt();
 
         $appName = $input->getParameter(2);
@@ -44,7 +47,7 @@ class CreateAppCommand extends LightCliDocCommand
 
             $machineUniPath = MachineUniverseTool::getMachineUniversePath();
             $boilerDir = $machineUniPath . "/Ling/Light_Cli/light-app-boilerplate";
-            if (false === is_dir($boilerDir)) {
+            if (true === $new || false === is_dir($boilerDir)) {
                 $boilerZipUrl = "https://github.com/lingtalfi/Light_AppBoilerplate/raw/master/assets/light-app-boilerplate.zip";
                 $boilerZip = $boilerDir . ".zip";
 
@@ -100,7 +103,7 @@ class CreateAppCommand extends LightCliDocCommand
 
 
     //--------------------------------------------
-    //
+    // LightCliCommandInterface
     //--------------------------------------------
     /**
      * @overrides
@@ -131,13 +134,26 @@ class CreateAppCommand extends LightCliDocCommand
     /**
      * @overrides
      */
+    public function getFlags(): array
+    {
+        $co = LightCliFormatHelper::getConceptFmt();
+        $url = LightCliFormatHelper::getUrlFmt();
+
+        return [
+            "n" => " new, flush the boilerplate cache and recreate the app from the boilerplate zip downloaded from the web.",
+        ];
+    }
+
+    /**
+     * @overrides
+     */
     public function getAliases(): array
     {
         $co = LightCliFormatHelper::getConceptFmt();
         $url = LightCliFormatHelper::getUrlFmt();
 
         return [
-            "mkapp" => "light_cli create_app",
+            "mkapp" => "lpi create_app",
         ];
     }
 
