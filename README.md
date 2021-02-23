@@ -70,6 +70,10 @@ cli:
 History Log
 =============
 
+- 1.0.14 -- 2021-02-23
+
+    - Update dependencies
+
 - 1.0.13 -- 2021-02-19
 
     - fix LightCliCommandDocUtility->printListByApp, aliases not displayed correctly
