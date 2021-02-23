@@ -70,6 +70,10 @@ cli:
 History Log
 =============
 
+- 1.0.18 -- 2021-02-23
+
+    - fix typo in CreateAppCommand->getAliases
+
 - 1.0.17 -- 2021-02-23
 
     - update create_app command, add n flag

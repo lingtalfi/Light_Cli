@@ -118,7 +118,6 @@ class LightCliApplication extends LightCliBaseApplication
          */
 
 
-
         $firstParam = $input->getParameter(1); // cannot be null, because defaultCommandAlias = help (see parent class)
         $secondParam = $input->getParameter(2); // cannot be null, because defaultCommandAlias = help (see parent class)
 
@@ -131,6 +130,7 @@ class LightCliApplication extends LightCliBaseApplication
         $cliApps = $lc->getCliApps();
 
 
+
         //--------------------------------------------
         // appId or alias?
         //--------------------------------------------
@@ -141,7 +141,9 @@ class LightCliApplication extends LightCliBaseApplication
 
 
 
+
             if (array_key_exists($firstParam, $this->alias2Cmds)) {
+
 
                 $cmds = $this->alias2Cmds[$firstParam];
                 $nbCmds = count($cmds);
@@ -170,6 +172,7 @@ class LightCliApplication extends LightCliBaseApplication
                 } else {
                     $firstParamAlias = $this->alias2Cmds[$firstParam][0];
                 }
+
 
 
                 //--------------------------------------------
@@ -209,7 +212,6 @@ class LightCliApplication extends LightCliBaseApplication
                     $proxyInput = CommandLineInputHelper::getInputWritableCopy($input, [
                         'parameters' => $parameters,
                     ]);
-
 
                     $app->run($proxyInput, $output);
 

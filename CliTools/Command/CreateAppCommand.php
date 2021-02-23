@@ -153,7 +153,7 @@ class CreateAppCommand extends LightCliDocCommand
         $url = LightCliFormatHelper::getUrlFmt();
 
         return [
-            "mkapp" => "lpi create_app",
+            "mkapp" => "light_cli create_app",
         ];
     }
 
