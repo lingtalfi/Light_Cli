@@ -70,6 +70,14 @@ cli:
 History Log
 =============
 
+- 1.0.16 -- 2021-02-23
+
+    - Update dependencies (pushed by SubscribersUtil)
+
+- 1.0.15 -- 2021-02-23
+
+    - Update dependencies (pushed by SubscribersUtil)
+
 - 1.0.14 -- 2021-02-23
 
     - Update dependencies
