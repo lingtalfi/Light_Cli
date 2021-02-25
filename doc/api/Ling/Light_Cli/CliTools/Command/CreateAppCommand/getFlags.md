@@ -47,7 +47,7 @@ Returns array.
 
 Source Code
 ===========
-See the source code for method [CreateAppCommand::getFlags](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Command/CreateAppCommand.php#L137-L145)
+See the source code for method [CreateAppCommand::getFlags](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Command/CreateAppCommand.php#L137-L147)
 
 
 See Also

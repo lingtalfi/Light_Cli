@@ -1,6 +1,6 @@
 Light cli, conception notes
 ==========
-2021-01-05 -> 2021-02-19
+2021-01-05 -> 2021-02-23
 
 The major ideas behind **light cli** are:
 
@@ -131,7 +131,7 @@ When this happens, we ask the user to make up his/her mind and select the comman
 
 Usage commands
 ---------
-2021-01-05 -> 2021-02-19
+2021-01-05 -> 2021-02-23
 
 
 - **commands**: displays the list of registered third party application commands and aliases.
@@ -150,7 +150,9 @@ Usage commands
         - parameters:
             - appName: the name of the application to create
         - flags:
-            - n: new, flush the boilerplate cache and recreate the app from the boilerplate zip downloaded from the web.
+            - c: cache, by default, this command downloads the boilerplate from the web every time to make sure you have the latest version.
+                If the c flag is raised, it will use the cached version instead. If the cached version does not exist yet, 
+                it will be fetched from the internet.
         - aliases:
             - mkapp
 - **help**: displays a help message.

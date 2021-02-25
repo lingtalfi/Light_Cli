@@ -34,7 +34,7 @@ class CreateAppCommand extends LightCliDocCommand
          */
 
 
-        $new = $input->hasFlag("n");
+        $cache = $input->hasFlag("c");
 
 
         $fmtFile = LightCliFormatHelper::getFileFmt();
@@ -47,7 +47,7 @@ class CreateAppCommand extends LightCliDocCommand
 
             $machineUniPath = MachineUniverseTool::getMachineUniversePath();
             $boilerDir = $machineUniPath . "/Ling/Light_Cli/light-app-boilerplate";
-            if (true === $new || false === is_dir($boilerDir)) {
+            if (false === $cache || false === is_dir($boilerDir)) {
                 $boilerZipUrl = "https://github.com/lingtalfi/Light_AppBoilerplate/raw/master/assets/light-app-boilerplate.zip";
                 $boilerZip = $boilerDir . ".zip";
 
@@ -140,7 +140,9 @@ class CreateAppCommand extends LightCliDocCommand
         $url = LightCliFormatHelper::getUrlFmt();
 
         return [
-            "n" => " new, flush the boilerplate cache and recreate the app from the boilerplate zip downloaded from the web.",
+            "c" => " cache, by default, this command downloads the boilerplate from the web every time to make sure you have the latest version.
+ If the c flag is raised, it will use the cached version instead. If the cached version does not exist yet, 
+ it will be fetched from the internet.",
         ];
     }
 

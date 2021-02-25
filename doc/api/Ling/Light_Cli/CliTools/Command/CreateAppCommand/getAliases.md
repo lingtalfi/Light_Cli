@@ -49,7 +49,7 @@ Returns array.
 
 Source Code
 ===========
-See the source code for method [CreateAppCommand::getAliases](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Command/CreateAppCommand.php#L150-L158)
+See the source code for method [CreateAppCommand::getAliases](https://github.com/lingtalfi/Light_Cli/blob/master/CliTools/Command/CreateAppCommand.php#L152-L160)
 
 
 See Also
