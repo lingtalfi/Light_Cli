@@ -1,6 +1,6 @@
 Light cli, conception notes
 ==========
-2021-01-05 -> 2021-02-23
+2021-01-05 -> 2021-02-26
 
 The major ideas behind **light cli** are:
 
@@ -84,9 +84,9 @@ temp_file=$(mktemp); curl -fsSL https://raw.githubusercontent.com/lingtalfi/Ligh
 
 Usage theory
 ------
-2021-01-05 -> 2021-01-14
+2021-01-05 -> 2021-02-26
 
-The **light** command (alias to our script as described in the [preparation section](#preparation)) can be used in the
+The **light** command (or its alias **lt**) can be used in the
 following manners:
 
 - light \<appId> <command> (\<args>)?

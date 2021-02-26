@@ -1,6 +1,6 @@
 Light_Cli
 ===========
-2021-01-07 -> 2021-02-25
+2021-01-07 -> 2021-02-26
 
 
 A command line interface for the light framework.
@@ -70,6 +70,10 @@ cli:
 History Log
 =============
 
+- 1.0.20 -- 2021-02-26
+
+    - update doc, usage theory section
+  
 - 1.0.19 -- 2021-02-25
 
     - update create_app command, replace n flag with c flag
