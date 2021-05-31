@@ -65,6 +65,10 @@ class LightCliApplication extends LightCliBaseApplication
 
         $this->registerCommand("Ling\Light_Cli\CliTools\Command\CommandsCommand", "commands");
         $this->registerCommand("Ling\Light_Cli\CliTools\Command\CreateAppCommand", "create_app");
+
+        $this->registerCommand("Ling\Light_Cli\CliTools\Command\DisableServiceCommand", "disable_service");
+        $this->registerCommand("Ling\Light_Cli\CliTools\Command\EnableServiceCommand", "enable_service");
+
         $this->registerCommand("Ling\Light_Cli\CliTools\Command\HelpCommand", "help");
         $this->registerCommand("Ling\Light_Cli\CliTools\Command\PlanetsCommand", "planets");
         $this->registerCommand("Ling\Light_Cli\CliTools\Command\RoutesCommand", "routes");
