@@ -129,3 +129,10 @@
     - Ling:Light:0.70.5
     - Ling:Light_PlanetInstaller:2.0.0
     - Ling:UniverseTools:1.22.40
+
+1.0.24: 
+    - Ling:Bat:1.322
+    - Ling:CliTools:1.10.29
+    - Ling:Light:0.70.6
+    - Ling:Light_PlanetInstaller:2.0.0
+    - Ling:UniverseTools:1.22.40
